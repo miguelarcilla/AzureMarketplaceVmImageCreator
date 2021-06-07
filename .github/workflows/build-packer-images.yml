@@ -6,10 +6,10 @@ on:
       - main
 
 env:
-  LOCATION: EastUS
-  DESTINATION_RESOURCE_GROUP_NAME: dsr-images-rg
-  DESTINATION_IMAGE_GALLERY_NAME: dsrimagegallery
-  DESTINATION_PUBLISHER: Daniel.Scott-Raynsford
+  LOCATION: SoutheastAsia
+  DESTINATION_RESOURCE_GROUP_NAME: anarcill-images
+  DESTINATION_IMAGE_GALLERY_NAME: anarcillsharedimages
+  DESTINATION_PUBLISHER: Miguel.Arcilla
   DESTINATION_IMAGE_VERSION: 1.0.${{ github.run_number }}
   AZURE_SUBSCRIPTION_ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).subscriptionId }}
   AZURE_TENANT_ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).tenantId }}
